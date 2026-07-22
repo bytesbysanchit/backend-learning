@@ -1,0 +1,20 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-intro.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "lodash": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
