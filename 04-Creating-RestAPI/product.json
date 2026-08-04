@@ -1,0 +1,39 @@
+[
+  {
+    "name": "iphone 16",
+    "price": 89999,
+    "featured": true,
+    "company": "apple"
+  },
+  {
+    "name": "iphone 15",
+    "price": 74999,
+    "featured": true,
+    "company": "apple"
+  },
+  {
+    "name": "galaxy s25",
+    "price": 79999,
+    "company": "samsung"
+  },
+  {
+    "name": "galaxy a56",
+    "price": 32999,
+    "company": "samsung"
+  },
+  {
+    "name": "pixel 9",
+    "price": 69999,
+    "company": "google"
+  },
+  {
+    "name": "oneplus 13",
+    "price": 64999,
+    "company": "oneplus"
+  },
+  {
+    "name": "redmi note 14 pro",
+    "price": 28999,
+    "company": "xiaomi"
+  }
+] 
