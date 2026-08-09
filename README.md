@@ -19,20 +19,20 @@ Currently following:
 - JavaScript (ES6+)
 - Node.js
 - npm
-- Express.js *(Coming Soon)*
-- MongoDB *(Coming Soon)*
-- Mongoose *(Coming Soon)*
-- REST APIs *(Coming Soon)*
+- Express.js 
+- MongoDB 
+- Mongoose 
+- REST APIs 
 - JWT Authentication *(Coming Soon)*
 
 ---
 
 ## 📂 Repository Structure
 
-```
+```text
 backend-learning/
 │
-├── node-tutorial/
+├── 01-node-tutorial/
 │   ├── 01-intro/
 │   ├── 02-modules/
 │   ├── 03-built-in-modules/
@@ -41,7 +41,28 @@ backend-learning/
 │   ├── 06-npm/
 │   ├── 07-events/
 │   ├── 08-streams/
-│   ├── 09-express/
+│   └── ...
+│
+├── 02-express-tutorial/
+│   ├── ...
+│   └── ...
+│
+├── 03-MongoDB/
+│   ├── ...
+│   └── ...
+│
+├── 04-Creating-RestAPI/
+│   ├── controllers/
+│   ├── db/
+│   ├── models/
+│   ├── routes/
+│   ├── product.json
+│   ├── productDB.js
+│   ├── app.js
+│   └── ...
+│
+├── 05-student-management-api/
+│   ├── ...
 │   └── ...
 │
 └── README.md
@@ -52,28 +73,37 @@ backend-learning/
 ## 📖 Progress
 
 ### Node.js
-
 - [x] Introduction
 - [x] CommonJS Modules
-- [ ] Built-in Modules
-- [ ] OS Module
-- [ ] Path Module
-- [ ] File System Module
-- [ ] HTTP Module
-- [ ] npm
-- [ ] Event Emitter
-- [ ] Streams
-- [ ] Express.js
+- [x] Built-in Modules
+- [x] OS Module
+- [x] Path Module
+- [x] File System Module
+- [x] HTTP Module
+- [x] npm
+- [x] Event Emitter
+- [x] Streams
 
-### MongoDB
+### Express.js
+- [x] Express Basics
+- [x] Routing
+- [x] Middleware
+- [x] REST API Basics
 
-- [ ] MongoDB Basics
-- [ ] Mongoose
-- [ ] CRUD Operations
+### MongoDB & Mongoose
+- [x] MongoDB Basics
+- [x] MongoDB Atlas
+- [x] Mongoose
+- [x] Schemas & Models
+- [x] CRUD Operations
+- [x] Query Filtering
+- [x] Sorting
+- [X] Pagination
+- [X] Advanced Filtering
 
 ### Backend Projects
-
-- [ ] REST API
+- [x] REST API
+- [ ] Student Management API
 - [ ] Authentication API
 - [ ] Blog API
 - [ ] File Upload API
