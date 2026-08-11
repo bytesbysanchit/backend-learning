@@ -14,4 +14,34 @@ const createStudent= async (req, res)=>{
   }
 }
 
-module.exports= {createStudent}
+const getAllStudents = async (req, res) => {
+  try {
+    const students = await Student.find();
+    res.status(200).json({
+      message: 'Students fetched successfully',
+      students
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: 'Failed to fetch students',
+      error: error.message
+    });
+  }
+}
+
+const getStudentById = async (req, res) => {
+  try {
+    const student = await Student.findById(req.params.id);
+    res.status(200).json({
+      message: 'Student fetched successfully',
+      student
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: 'Failed to fetch student',
+      error: error.message
+    });
+  }
+};
+
+module.exports= {createStudent, getAllStudents, getStudentById}
