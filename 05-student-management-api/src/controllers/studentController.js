@@ -44,4 +44,34 @@ const getStudentById = async (req, res) => {
   }
 };
 
-module.exports= {createStudent, getAllStudents, getStudentById}
+const updateStudent = async (req, res) => {
+  try {
+    const student = await Student.findByIdAndUpdate(req.params.id, req.body, {new: true, runValidators: true});
+    res.status(200).json({
+      message: 'Student updated successfully',
+      student
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: 'Failed to update student',
+      error: error.message
+    });
+  }
+};
+
+const deleteStudent = async (req, res) => {
+  try {
+    const student = await Student.findByIdAndDelete(req.params.id);
+    res.status(200).json({
+      message: 'Student deleted successfully',
+      student
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: 'Failed to delete student',
+      error: error.message
+    });
+  }
+};
+
+module.exports= {createStudent, getAllStudents, getStudentById, updateStudent, deleteStudent}
