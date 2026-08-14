@@ -11,6 +11,8 @@ This repository contains my code, notes, and practice projects as I learn backen
 Currently following:
 
 - Node.js and Express.js Full Course (FreeCodeCamp)
+- MongoDB Crash Course (CodeWithHarry)
+- Create RestApi (Thapa Technical)
 
 ---
 
