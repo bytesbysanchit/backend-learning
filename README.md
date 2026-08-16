@@ -9,10 +9,7 @@ This repository contains my code, notes, and practice projects as I learn backen
 ## 📚 Course
 
 Currently following:
-
-- Node.js and Express.js Full Course (FreeCodeCamp)
-- MongoDB Crash Course (CodeWithHarry)
-- Create RestApi (Thapa Technical)
+...
 
 ---
 
@@ -100,8 +97,8 @@ backend-learning/
 - [x] CRUD Operations
 - [x] Query Filtering
 - [x] Sorting
-- [X] Pagination
-- [X] Advanced Filtering
+- [x] Pagination
+- [x] Advanced Filtering
 
 ### Backend Projects
 - [x] REST API
