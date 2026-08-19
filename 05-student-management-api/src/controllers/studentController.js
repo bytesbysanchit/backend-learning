@@ -13,7 +13,51 @@ const createStudent= async (req, res, next)=>{
 
 const getAllStudents = async (req, res, next) => {
   try {
-    const students = await Student.find();
+    const allowedFilters = [
+      'course',
+      'semester',
+      'section',
+      'gender',
+      'status'
+    ];
+
+    const filters = {};
+    allowedFilters.forEach((field) => {
+      if (req.query[field]) {
+        const value = req.query[field];
+        if (value.includes(',')) {
+          filters[field] = {
+            $in: value.split(',')
+          };
+        } else {
+          filters[field] = value;
+        }
+      }
+    });
+
+    if (req.query.or) {
+      const conditions = req.query.or.split(',');
+
+      const orConditions = conditions
+        .map((condition) => {
+          const [field, value] = condition.split(':');
+
+          if (!allowedFilters.includes(field)) {
+            return null;
+          }
+
+          return {
+            [field]: value
+          };
+        })
+        .filter(condition => condition !== null);
+
+      if (orConditions.length > 0) {
+        filters.$or = orConditions;
+      }
+    }
+    
+    const students = await Student.find(filters);
     res.status(200).json({
       message: 'Students fetched successfully',
       students
