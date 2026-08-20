@@ -61,7 +61,12 @@ backend-learning/
 │   └── ...
 │
 ├── 05-student-management-api/
-│   ├── ...
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── models/
+│   │   └── routes/
+│   ├── app.js
 │   └── ...
 │
 └── README.md
@@ -90,19 +95,21 @@ backend-learning/
 - [x] REST API Basics
 
 ### MongoDB & Mongoose
+
 - [x] MongoDB Basics
 - [x] MongoDB Atlas
 - [x] Mongoose
 - [x] Schemas & Models
 - [x] CRUD Operations
 - [x] Query Filtering
+- [x] Advanced Filtering
+- [x] Comparison Operators
 - [x] Sorting
 - [x] Pagination
-- [x] Advanced Filtering
 
 ### Backend Projects
 - [x] REST API
-- [ ] Student Management API
+- [x] Student Management API
 - [ ] Authentication API
 - [ ] Blog API
 - [ ] File Upload API
