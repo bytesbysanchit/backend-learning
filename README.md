@@ -124,7 +124,7 @@ The goal of this repository is to:
 - Learn backend development from scratch.
 - Build a strong understanding of Node.js and Express.js.
 - Practice writing clean and organized code.
-- Track my learning journey.
+- Track my backend learning journey.
 - Build projects for internships and placements.
 
 ---
