@@ -65,9 +65,10 @@ backend-learning/
 │   │   ├── controllers/
 │   │   ├── middleware/
 │   │   ├── models/
-│   │   └── routes/
+│   │   ├── routes/
+|   |   └── db/
 │   ├── app.js
-    ├── server.js
+|   ├── server.js
 │   └── ...
 │
 └── README.md
