@@ -6,13 +6,6 @@ This repository contains my code, notes, and practice projects as I learn backen
 
 ---
 
-## 📚 Course
-
-Currently following:
-...
-
----
-
 ## 🛠️ Technologies
 
 - JavaScript (ES6+)
