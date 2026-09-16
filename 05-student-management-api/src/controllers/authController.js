@@ -64,5 +64,8 @@ const login = async (req, res, next) => {
   }
 };
 
+const profile= async(re, res, next)=>{
+  
+}
 
 module.exports= {register, login}
