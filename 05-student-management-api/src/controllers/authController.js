@@ -64,8 +64,23 @@ const login = async (req, res, next) => {
   }
 };
 
-const profile= async(re, res, next)=>{
-  
-}
+const profile= async(req, res, next)=>{
+  try{
+    const user= await User.findById(req.user.userId);
+    if (user === null) {
+      return res.status(404).json({
+        message: 'User not found'
+      });
+    }
+    const userData = user.toObject();
+    delete userData.password; 
+    res.status(200).json({
+      message: 'Profile fetched successfully',
+      user: userData
+    });
+  } catch(error){
+    next(error);
+  }
+};
 
-module.exports= {register, login}
+module.exports= {register, login, profile}
