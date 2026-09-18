@@ -15,7 +15,7 @@ This repository contains my code, notes, and practice projects as I learn backen
 - MongoDB 
 - Mongoose 
 - REST APIs 
-- JWT Authentication *(Coming Soon)*
+- JWT Authentication 
 
 ---
 
@@ -102,10 +102,23 @@ backend-learning/
 - [x] Sorting
 - [x] Pagination
 
+### Authentication & Authorization
+
+- [x] Authentication vs Authorization
+- [x] User Model
+- [x] Password Hashing with bcrypt
+- [x] User Registration
+- [x] User Login
+- [x] JWT Generation
+- [x] JWT Verification
+- [x] Authentication Middleware
+- [x] Protected Routes
+- [x] Role-Based Authorization
+
 ### Backend Projects
 - [x] REST API
 - [x] Student Management API
-- [ ] Authentication API
+- [X] Authentication API
 - [ ] Blog API
 - [ ] File Upload API
 
